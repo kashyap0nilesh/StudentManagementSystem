@@ -1,0 +1,156 @@
+.app-container {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+    margin: 0;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+  
+  .add-student-container,
+  .edit-student-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  form input[type="text"],
+  form input[type="number"] {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  form input[type="text"]:focus,
+  form input[type="number"]:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  
+  button {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  button:active {
+    background-color: #1d6b8f;
+  }
+  
+  
+  button.edit {
+    background-color: #2ecc71;
+  }
+  
+  button.edit:hover {
+    background-color: #27ae60;
+  }
+  
+  button.edit:active {
+    background-color: #2ecc71;
+  }
+  
+  
+  button.delete {
+    background-color: #e74c3c;
+  }
+  
+  button.delete:hover {
+    background-color: #c0392b;
+  }
+  
+  button.delete:active {
+    background-color: #e74c3c;
+  }
+  
+  
+  a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  td {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #f8f8f8;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .add-student-container,
+    .edit-student-container {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    form input[type="text"],
+    form input[type="number"],
+    form button {
+      width: 100%;
+    }
+  
+    table {
+      font-size: 14px;
+    }
+  
+    th, td {
+      padding: 8px;
+    }
+  }
+  
